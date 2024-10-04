@@ -1,0 +1,58 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2%;
+  box-shadow: 0 0 10px #0003;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  width: 25px;
+  height: 15px;
+  margin-right: 20px;
+}
+.logo {
+  width: 130px;
+  height: auto;
+}
+
+.navMid {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+
+.navMid img {
+  width: 15px;
+  height: 15px;
+}
+
+.navMid input {
+  width: 400px;
+  height: auto;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+.navRight {
+  display: flex;
+}
+
+.navRight img {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+#profile {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 0px;
+}

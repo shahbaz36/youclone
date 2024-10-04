@@ -1,0 +1,62 @@
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-top: 80px;
+  padding-left: 2%;
+}
+
+.shortcutLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideLink {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.sideLink img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:global(.active) {
+  color: #ed3833;
+  font-weight: 600;
+}
+
+:global(.active img) {
+  padding-bottom: 2px;
+  border-bottom: 3px solid red;
+}
+
+.subscribedList {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribedList h3 {
+  font-size: 13px;
+  margin: 20px 0px;
+  color: #5a5a5a;
+}
+
+.subscribedList img {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border-bottom: 0px;
+}
