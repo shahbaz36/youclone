@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import PageNav from "./components/Navbar/PageNav";
-import Sidebar from "./components/Sidebar/Sidebar";
 import { useState } from "react";
+import Home from "./Pages/Home/Home";
 
 function App() {
   const [isHidden, setIsHidden] = useState(false);
@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <PageNav handleIsHidden={handleIsHidden} />
-      <Sidebar isHidden={isHidden} />
+      <Home isHidden={isHidden} />
     </BrowserRouter>
   );
 }

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./Navbar.module.css";
 
 import menu_icon from "../../assets/menu.png";
