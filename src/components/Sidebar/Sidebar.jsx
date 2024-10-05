@@ -18,10 +18,10 @@ import tom from "../../assets/tom.png";
 import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
-function Sidebar() {
+function Sidebar({ isHidden }) {
   return (
     <>
-      <div className={styles.sidebar}>
+      <div className={`${styles.sidebar} ${isHidden ? styles.hidden : ""}`}>
         <div className={styles.shortcutLink}>
           <NavLink to="/" className={styles.sideLink}>
             <img src={home} alt="" />

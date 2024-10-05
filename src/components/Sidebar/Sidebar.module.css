@@ -6,9 +6,20 @@
   padding-left: 2%;
 }
 
+.hidden div h3 {
+  display: none;
+}
+
+.hidden div p {
+  display: none;
+}
+
 .shortcutLink {
   display: flex;
   flex-direction: column;
+}
+.shortcutLink hr {
+  margin-bottom: 15px;
 }
 
 .sideLink {
@@ -17,10 +28,6 @@
   width: fit-content;
   margin-bottom: 20px;
   cursor: pointer;
-}
-
-.hidden {
-  display: none;
 }
 
 .sideLink img {
@@ -50,7 +57,7 @@ a {
 
 .subscribedList h3 {
   font-size: 13px;
-  margin: 20px 0px;
+  margin: 5px 0px 20px 0px;
   color: #5a5a5a;
 }
 

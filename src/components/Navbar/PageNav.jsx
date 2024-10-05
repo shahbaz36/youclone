@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./Navbar.module.css";
 
 import menu_icon from "../../assets/menu.png";
@@ -8,11 +9,16 @@ import more from "../../assets/more.png";
 import notification from "../../assets/notification.png";
 import profile from "../../assets/jack.png";
 
-function PageNav() {
+function PageNav({ handleIsHidden }) {
   return (
     <nav className={styles.nav}>
       <div className={styles.navLeft}>
-        <img src={menu_icon} className={styles.menu} alt="menu" />
+        <img
+          src={menu_icon}
+          className={styles.menu}
+          alt="menu"
+          onClick={handleIsHidden}
+        />
         <img src={logo} className={styles.logo} alt="logo" />
       </div>
       <div className={styles.navMid}>

@@ -1,8 +1,11 @@
 .nav {
   display: flex;
+  position: absolute;
+  width: 100vw;
   justify-content: space-between;
   padding: 10px 2%;
   box-shadow: 0 0 10px #0003;
+  z-index: 1;
 }
 
 .navLeft {
