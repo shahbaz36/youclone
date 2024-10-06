@@ -1,7 +1,8 @@
+import { NavLink } from "react-router-dom";
+
 import styles from "./Feed.module.css";
 
 import thumbnail1 from "../../assets/thumbnail1.png";
-import { NavLink } from "react-router-dom";
 import thumbnail2 from "../../assets/thumbnail2.png";
 import thumbnail3 from "../../assets/thumbnail3.png";
 import thumbnail4 from "../../assets/thumbnail4.png";
@@ -13,7 +14,7 @@ import thumbnail8 from "../../assets/thumbnail8.png";
 function Feed() {
   return (
     <div className={styles.feed}>
-      <NavLink to="/t1" className={styles.card}>
+      <NavLink to="/video" className={styles.card}>
         <img src={thumbnail1} alt="" />
         <h2>Thumbnail1</h2>
         <h3>ChannelName</h3>

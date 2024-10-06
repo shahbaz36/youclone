@@ -1,0 +1,29 @@
+.playContainer {
+  display: grid;
+  margin: 75px 20px 20px 20px;
+  height: auto;
+  /* border: 2px dotted black; */
+  grid-template-columns: 2fr 0.9fr;
+  column-gap: 20px;
+}
+.recommended {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideVideo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.thumbnail {
+  flex-basis: 49%;
+}
+.thumbnail img {
+  width: 100%;
+}
+
+.info {
+  flex-basis: 49%;
+}
