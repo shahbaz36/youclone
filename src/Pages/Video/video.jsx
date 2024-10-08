@@ -64,6 +64,54 @@ function PlayVideo() {
         </div>
         <button type="button">Subscribe</button>
       </div>
+      <div className={styles.vidDescription}>
+        <p>
+          This is videos description.... Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Repellendus corporis iure facilis incidunt ipsa.
+          Assumenda nobis, hic consequuntur neque velit deserunt recusandae non
+          inventore quo eos sequi nam nemo laudantium.{" "}
+        </p>
+        <hr />
+        <h4>1k Comments </h4>
+        <div className={styles.comment}>
+          <img src={jack} alt="" className={styles.user} />
+          <div className={styles.commentInfo}>
+            <h3>
+              @UserName<span> 10 hours ago</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Assumenda iusto autem necessitatibus possimus beatae neque
+              repudiandae nostrum rerum dolorem ratione enim animi consequuntur
+              porro laborum libero quasi, magnam eveniet obcaecati.
+            </p>
+            <div className={styles.commentAction}>
+              <img src={like} alt="" />
+              <span>100</span>
+              <img src={dislike} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className={styles.comment}>
+          <img src={jack} alt="" className={styles.user} />
+          <div className={styles.commentInfo}>
+            <h3>
+              @UserName<span> 10 hours ago</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Assumenda iusto autem necessitatibus possimus beatae neque
+              repudiandae nostrum rerum dolorem ratione enim animi consequuntur
+              porro laborum libero quasi, magnam eveniet obcaecati.
+            </p>
+            <div className={styles.commentAction}>
+              <img src={like} alt="" />
+              <span>100</span>
+              <img src={dislike} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
