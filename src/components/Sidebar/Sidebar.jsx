@@ -18,44 +18,80 @@ import tom from "../../assets/tom.png";
 import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
-function Sidebar({ isHidden }) {
+function Sidebar({ isHidden, setCategory }) {
   return (
     <>
       <div className={`${styles.sidebar} ${isHidden ? styles.hidden : ""}`}>
         <div className={styles.shortcutLink}>
-          <NavLink to="/" className={styles.sideLink}>
+          <NavLink
+            to="/"
+            className={styles.sideLink}
+            onClick={() => setCategory(0)}
+          >
             <img src={home} alt="" />
             <p>Home</p>
           </NavLink>
-          <NavLink to="/gaming" className={styles.sideLink}>
+          <NavLink
+            to="/gaming"
+            className={styles.sideLink}
+            onClick={() => setCategory(20)}
+          >
             <img src={game_icon} alt="" />
             <p>Gaming</p>
           </NavLink>
-          <NavLink to="/auto" className={styles.sideLink}>
+          <NavLink
+            to="/auto"
+            className={styles.sideLink}
+            onClick={() => setCategory(2)}
+          >
             <img src={automobiles} alt="" />
             <p>Automobiles</p>
           </NavLink>
-          <NavLink to="/sports" className={styles.sideLink}>
+          <NavLink
+            to="/sports"
+            className={styles.sideLink}
+            onClick={() => setCategory(17)}
+          >
             <img src={sports} alt="" />
             <p>Sports</p>
           </NavLink>
-          <NavLink to="/entertainment" className={styles.sideLink}>
+          <NavLink
+            to="/entertainment"
+            className={styles.sideLink}
+            onClick={() => setCategory(24)}
+          >
             <img src={entertainment} alt="" />
             <p>Entertainment</p>
           </NavLink>
-          <NavLink to="/tech" className={styles.sideLink}>
+          <NavLink
+            to="/tech"
+            className={styles.sideLink}
+            onClick={() => setCategory(28)}
+          >
             <img src={tech} alt="" />
             <p>Technology</p>
           </NavLink>
-          <NavLink to="/music" className={styles.sideLink}>
+          <NavLink
+            to="/music"
+            className={styles.sideLink}
+            onClick={() => setCategory(10)}
+          >
             <img src={music} alt="" />
             <p>Music</p>
           </NavLink>
-          <NavLink to="/blogs" className={styles.sideLink}>
+          <NavLink
+            to="/blogs"
+            className={styles.sideLink}
+            onClick={() => setCategory(22)}
+          >
             <img src={blogs} alt="" />
             <p>Blogs</p>
           </NavLink>
-          <NavLink to="/news" className={styles.sideLink}>
+          <NavLink
+            to="/news"
+            className={styles.sideLink}
+            onClick={() => setCategory(25)}
+          >
             <img src={news} alt="" />
             <p>News</p>
           </NavLink>

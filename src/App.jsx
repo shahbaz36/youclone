@@ -16,7 +16,9 @@ function App() {
       <PageNav handleIsHidden={handleIsHidden} />
       <Routes>
         <Route path="/" element={<Home isHidden={isHidden} />} />
+        <Route path="/:categoryId" element={<Home isHidden={isHidden} />} />
         <Route path="/video" element={<Video />} />
+        <Route path="/video/:category/:id" element={<Video />} />
       </Routes>
     </BrowserRouter>
   );
