@@ -7,6 +7,7 @@ import upload from "../../assets/upload.png";
 import more from "../../assets/more.png";
 import notification from "../../assets/notification.png";
 import profile from "../../assets/jack.png";
+import { Link } from "react-router-dom";
 
 function PageNav({ handleIsHidden }) {
   return (
@@ -18,7 +19,9 @@ function PageNav({ handleIsHidden }) {
           alt="menu"
           onClick={handleIsHidden}
         />
-        <img src={logo} className={styles.logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} className={styles.logo} alt="logo" />
+        </Link>
       </div>
       <div className={styles.navMid}>
         <input type="text" placeholder="search" />
