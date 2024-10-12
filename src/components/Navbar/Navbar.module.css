@@ -62,3 +62,15 @@
   border-radius: 50%;
   margin-right: 0px;
 }
+
+@media (max-width: 900px) {
+  .navMid {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navRight img {
+    display: none;
+  }
+}

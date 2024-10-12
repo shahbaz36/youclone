@@ -186,3 +186,13 @@ iframe {
   margin-right: 20px;
   color: #5a5a5a;
 }
+
+@media (max-width: 850px) {
+  .playContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .recommended {
+    display: none;
+  }
+}
