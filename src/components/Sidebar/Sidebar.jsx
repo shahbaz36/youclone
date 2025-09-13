@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import styles from "./sidebar.module.css";
+import styles from "./Sidebar.module.css";
 
 import home from "../../assets/home.png";
 import game_icon from "../../assets/game_icon.png";
